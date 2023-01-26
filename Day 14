@@ -1,0 +1,15 @@
+a = ['a', 'e', 'i', 'o', 'u']
+
+input = input().split(" ")
+
+
+def vowel_links(list):
+    for i in range(len(list) - 1):
+        if list[i][-1] in a and list[i+1][0] in a:
+            print('True')
+            break
+    else:
+        print('False')
+
+
+vowel_links(input)
